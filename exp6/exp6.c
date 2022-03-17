@@ -7,7 +7,7 @@
 
 char search_words[COUNT][20] = {"The", "lorem", "ipsum", "present", "dolor", "sit", "in"};
 long counts[COUNT];
-int line_c = 0;
+//int line_c = 0;
 
 int is_equal(char* a, const char* key, int ignore_case) {
  char b[20];
@@ -70,7 +70,7 @@ long determine_count(const char *file_name, const char *key, int ignore_case)
 int main() 
 {
  int i, nt = 0, ignore_case = 1;
- char choice, buf;
+ //char choice, buf;
  for (nt = 1; nt <= 16; nt *= 2)
  {
   for(i = 0; i < COUNT; i++) 

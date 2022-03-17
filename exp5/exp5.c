@@ -4,7 +4,7 @@
 #define BUFFER_SIZE 32
 int main(int argc, char** argv)
 {
-	int MyRank,Numprocs,Destination,iproc;
+	int MyRank,Numprocs;
 	int tag = 0;
 	int Root = 0, temp=1;
 	char Message[BUFFER_SIZE];

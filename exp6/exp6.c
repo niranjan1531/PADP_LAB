@@ -52,16 +52,15 @@ void read_word(char *temp, FILE *fp)
 
 long determine_count(const char *file_name, const char *key, int ignore_case) 
 {
- int key_index = 0, key_len = strlen(key);
  long word_count = 0;
- char ch;
+ 
  FILE *fp = fopen(file_name, "r");
  char temp[40];
- int i = 0;
+ 
  while(feof(fp) == 0) 
  {
   read_word(temp,fp);
-  if(is_equal(temp,key,ignore_case) != 0)
+  if(is_equal(temp,key,ignore_case))
    word_count++;
  }
  return word_count;
